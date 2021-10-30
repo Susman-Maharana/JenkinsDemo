@@ -51,6 +51,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>vem-java</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
