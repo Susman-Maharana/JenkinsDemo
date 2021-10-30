@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageGenerator {
 	
 	  
-	@GetMapping("message-generator")
+	@GetMapping("/message-generator")
 	public String getMessage(@RequestHeader("userName")String userName) {
 		Calendar c = Calendar.getInstance();
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
@@ -26,6 +26,7 @@ public class MessageGenerator {
         }else {
             return "Good night :: "+userName;
         }
-	}
+		
+     }
 	 
 }
